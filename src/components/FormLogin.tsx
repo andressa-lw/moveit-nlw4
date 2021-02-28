@@ -10,7 +10,7 @@ export function FormLogin() {
 
 	async function handleFormLogin(){
 		if(!user){
-			setError('Digite um nome de usuário')
+			setError('Digite o nome de seu usuário do Github')
 			return
 		}
 

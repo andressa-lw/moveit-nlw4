@@ -1,10 +1,10 @@
 import NextAuth from 'next-auth'
 import Providers from 'next-auth/providers'
-import { NextApiRequest, NextApiResponse } from 'next'
+import { NowRequest, NowResponse } from '@vercel/node'
 
 export default (
-  req: NextApiRequest, 
-  res: NextApiResponse) => 
+  req: NowRequest, 
+  res: NowResponse) => 
   NextAuth(req, res, {
     providers: [
       Providers.GitHub({
