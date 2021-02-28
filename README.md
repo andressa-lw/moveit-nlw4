@@ -32,11 +32,13 @@ $ yarn dev ou npm run dev
 ```
 
 ## :rocket: Próximas features
-* Tela de login com github
-* Leaderboard
-* Sidebar
-* Compartilhar no twitter
-* Darkmode
+- [x] Tela de login com github
+- [x] Responsivo
+- [x] Barra de progresso do botão
+- [ ] Leaderboard
+- [ ] Sidebar
+- [ ] Compartilhar no twitter
+- [ ] Darkmode
 
 # :closed_book: License
 This project is under the MIT license.
