@@ -5,11 +5,7 @@
 </p>
 
 ## :computer: Projeto
-<<<<<<< HEAD
 Projeto desenvolvido para pessoas que ficam boa parte do dia em frente ao computador. Ele tem um contador de 25 minutos e a cada ciclo é gerado um exercício para o corpo ou para os olhos, ao concluir o exercício a pessoa ganha XP para subir de nível.<br> Projeto realizado na Next Level Week #4 pela Rocketseat.
-=======
-Projeto desenvolvido para pessoas que ficam boa parte do dia em frente ao computador. Ele tem um contador de 25 minutos e a cada ciclo é gerado um exercício para o corpo ou para os olhos, ao concluir o exercício a pessoa ganha XP para subir de nível.<br>
->>>>>>> d69507289118f2a778c7094093dece176a365375
 <a href="https://moveit-one-tau.vercel.app/e">Veja aqui o projeto funcionando</a>
 
 ## :heart_eyes: Layout
@@ -43,8 +39,4 @@ $ yarn dev ou npm run dev
 * Darkmode
 
 # :closed_book: License
-<<<<<<< HEAD
 This project is under the MIT license.
-=======
-This project is under the MIT license.
->>>>>>> d69507289118f2a778c7094093dece176a365375
