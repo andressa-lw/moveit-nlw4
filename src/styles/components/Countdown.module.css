@@ -49,6 +49,7 @@
   font-size: 1.25rem;
   font-weight: 600;
   transition: background-color 0.2s;
+  position: relative;
 }
 
 .countdownButton:not(:disabled):hover {
@@ -78,4 +79,39 @@
 
 .countdownButton img {
   margin-left: .625rem;
+}
+
+.completionBar {
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background-color: var(--gray-line);
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.completionBar .completedBar {
+  height: 4px;
+  background-color: var(--green);
+  top: 0;
+  left: 0;
+  z-index: 5;
+  transition: linear 1s;
+}
+
+.countdownButtonActive:hover .completionBar {
+  display: none;
+}
+
+.countdownButtonActive:not(:disabled):hover {
+  background: var(--red);
+  color: var(--white);
+}
+
+.countdownButton:disabled {
+  background: var(--white);
+  color: var(--text);
+  cursor: not-allowed;
+  position: relative;
 }

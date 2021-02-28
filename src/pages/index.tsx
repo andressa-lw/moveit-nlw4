@@ -45,6 +45,7 @@ export default function Home(props: HomeProps) {
           </section>
         </CountdownProvider>
       </div>
+      
     </ChallengesProvider>
   )
 }

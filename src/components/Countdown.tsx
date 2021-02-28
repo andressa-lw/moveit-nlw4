@@ -8,6 +8,7 @@ export function Countdown() {
     seconds, 
     hasFinished, 
     isActive, 
+    barButtonCompleted,
     startCountdown, 
     resetCountdown 
   } = useContext(CountdownContext)
@@ -34,7 +35,13 @@ export function Countdown() {
       ) : (
         <>
           { isActive ? (
-            <button type="button" className={`${styles.countdownButton} ${styles.countdownButtonActive}`} onClick={resetCountdown}>Abandonar ciclo <img src="icons/close_cicle.svg" alt=""/></button>
+            <button type="button" className={`${styles.countdownButton} ${styles.countdownButtonActive}`} onClick={resetCountdown}>
+              Abandonar ciclo 
+              <img src="icons/close_cicle.svg" alt=""/>
+              <div className={styles.completionBar}>
+                <div className={styles.completedBar} style={{ width: `${barButtonCompleted}%` }} ></div>
+              </div>
+            </button>
           ) : (
             <button type="button" className={styles.countdownButton} onClick={startCountdown}>Iniciar um ciclo <img src="icons/play_arrow.svg" alt=""/></button>
           )}

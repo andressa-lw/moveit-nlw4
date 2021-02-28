@@ -1,0 +1,85 @@
+.bgLogin {
+  background: url('/logo-linear.svg') no-repeat top left;
+  background-color: var(--blue);
+  background-size: contain;
+}
+
+.loginContainer {
+  max-width: 1280px;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-end; 
+}
+
+.loginContainer section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.loginFormBox img {
+  max-width: 360px;
+  width: 100%;  
+  height: auto;  
+}
+
+.loginFormBox header {
+  margin-top: 6rem;
+}
+
+.loginFormBox header h1 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.loginFormBox header > span {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0 2.5rem 0;
+}
+
+.loginFormBox header > span img {
+  width: 40px;
+  height: 40px;
+  margin-right: 1.5rem;
+}
+
+.loginFormBox header p {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--text-highlight);
+  max-width: 254px;
+}
+.loginFormBox > div {
+  display: flex;
+}
+.loginFormBox input[type="text"] {
+  background: linear-gradient(90deg, #4953B8 0%, rgba(73, 83, 184, 0.2) 100%);
+  border-radius: 5px 0px 0px 5px;
+  border: 0;
+  padding:1.4375rem 1.875rem;
+  color: var(--white);
+}
+
+.loginFormBox ::placeholder {
+  color: var(--text-highlight);
+}
+
+.loginFormBox button {
+  background-color: var(--blue-dark);
+  border: 0;
+  padding: 1.75rem;
+  border-radius: 0px 5px 5px 0px;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginFormBox button:hover {
+  background-color: var(--green);
+}
