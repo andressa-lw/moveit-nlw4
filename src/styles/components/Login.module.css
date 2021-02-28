@@ -14,10 +14,12 @@
   align-items: flex-end; 
 }
 
-.loginContainer section {
+.loginContainer .loginFormBox {
   flex: 1;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .loginFormBox img {
@@ -54,7 +56,7 @@
   color: var(--text-highlight);
   max-width: 254px;
 }
-.loginFormBox > div {
+.loginFormBox > form {
   display: flex;
 }
 .loginFormBox input[type="text"] {
@@ -82,4 +84,10 @@
 
 .loginFormBox button:hover {
   background-color: var(--green);
+}
+
+.loginFormBox .messageError{
+  color: var(--white);
+  margin-top: 5px;
+  font-size: 1rem;
 }
